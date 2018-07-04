@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: elasticimport
   author: solutiondrive
   description: Import into elastic search.
   company: solutionDrive
