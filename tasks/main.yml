@@ -1,0 +1,10 @@
+---
+  - name: try to import into elastic search
+    uri:
+      url: "http://{{ elasticimport_host }}:{{ elasticimport_port}}/{{ item.value.path }}"
+      method: "{{ item.value.method }}"
+      body_format: "json"
+      body: "{{ lookup('file','templates/{{ item.value.doc }}') }}"
+      status_code: "200,201"
+    with_dict: "{{ elasticimport_docs }}"
+

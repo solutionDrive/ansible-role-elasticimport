@@ -1,0 +1,6 @@
+---
+elasticimport_host: "localhost"
+elasticimport_port: 9200
+
+elasticimport_docs: {}
+

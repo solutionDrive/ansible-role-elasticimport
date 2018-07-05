@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  role_name: elasticimport
+  author: solutiondrive
+  description: Import into elastic search.
+  company: solutionDrive
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - xenial
+        - trusty
+    - name: Debian
+      versions:
+        - stretch
+        - jessie
+  galaxy_tags:
+    - web
+    - system
+    - monitoring
+
+dependencies: []
